@@ -3,9 +3,7 @@
 *.json.gz
 datasets/*.csv
 
-# Large model files (exceed GitHub 100MB limit)
-models/phase4/RF_tuned_best.joblib
-models/phase4/RF_optimized.joblib
+# Note: RF_tuned_best.joblib uploaded as .gz (compressed) due to GitHub 100MB limit
 
 # Python
 __pycache__/
