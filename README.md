@@ -127,6 +127,8 @@ ottawa-cav-misbehavior-detection/
 |-- models/                            # Trained ML models
 |   |-- phase4/                        # Optimized models (.joblib)
 |       |-- XGB_optimized.joblib       # Best model (XGBoost)
+|       |-- RF_optimized.joblib        # Random Forest optimized
+|       |-- RF_tuned_best.joblib.gz    # Random Forest tuned (compressed, run: gunzip RF_tuned_best.joblib.gz)
 |       |-- GB_optimized.joblib        # Gradient Boosting
 |       |-- MLP_optimized.joblib       # MLP Neural Network
 |       |-- scaler_phase4.joblib       # Feature scaler
