@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <copy file="ottawa.net.xml"/>
+    <copy file="ottawa.rou.xml"/>
+    <copy file="ottawa.poly.xml"/>
+    <copy file="ottawa.sumo.cfg" type="config"/>
+</launch>

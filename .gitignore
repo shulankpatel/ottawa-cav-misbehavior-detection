@@ -1,0 +1,32 @@
+# Large data files
+*.csv
+*.json.gz
+datasets/*.csv
+
+# Large model files (exceed GitHub 100MB limit)
+models/phase4/RF_tuned_best.joblib
+models/phase4/RF_optimized.joblib
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Simulation temp files
+/tmp/
+*.vec
+*.vci
+*.sca

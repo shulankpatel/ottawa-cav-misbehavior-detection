@@ -1,0 +1,116 @@
+{
+  "phase": "Phase 4 - ML Optimization",
+  "date": "2026-03-05 14:55:39",
+  "dataset": "/home/shulank/ottawa-cav-project/datasets/ottawa_cav_dataset.csv",
+  "sample_size": 100000,
+  "improvements": [
+    "SMOTE oversampling",
+    "SVM replaced with XGBoost & Gradient Boosting",
+    "Threshold optimization per model",
+    "3-fold cross-validation",
+    "RandomizedSearchCV hyperparameter tuning"
+  ],
+  "phase3_baseline": {
+    "Random Forest": {
+      "accuracy": 0.946,
+      "precision": 0.99,
+      "recall": 0.481,
+      "f1": 0.648,
+      "auc_roc": 0.934
+    },
+    "SVM": {
+      "accuracy": 0.474,
+      "precision": 0.109,
+      "recall": 0.578,
+      "f1": 0.184,
+      "auc_roc": 0.516
+    },
+    "MLP": {
+      "accuracy": 0.947,
+      "precision": 0.925,
+      "recall": 0.521,
+      "f1": 0.667,
+      "auc_roc": 0.902
+    }
+  },
+  "phase4_optimized": {
+    "Random Forest (Optimized)": {
+      "accuracy": 0.9421,
+      "precision": 0.8409,
+      "recall": 0.5364,
+      "f1_score": 0.6549,
+      "auc_roc": 0.9049,
+      "threshold": 0.65,
+      "confusion_matrix": [
+        [
+          17743,
+          208
+        ],
+        [
+          950,
+          1099
+        ]
+      ]
+    },
+    "XGBoost": {
+      "accuracy": 0.9307,
+      "precision": 0.6783,
+      "recall": 0.6154,
+      "f1_score": 0.6453,
+      "auc_roc": 0.9151,
+      "threshold": 0.85,
+      "confusion_matrix": [
+        [
+          17353,
+          598
+        ],
+        [
+          788,
+          1261
+        ]
+      ]
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.9357,
+      "precision": 0.7593,
+      "recall": 0.5451,
+      "f1_score": 0.6347,
+      "auc_roc": 0.8932,
+      "threshold": 0.55,
+      "confusion_matrix": [
+        [
+          17597,
+          354
+        ],
+        [
+          932,
+          1117
+        ]
+      ]
+    },
+    "MLP Neural Network (Optimized)": {
+      "accuracy": 0.9325,
+      "precision": 0.8043,
+      "recall": 0.4514,
+      "f1_score": 0.5783,
+      "auc_roc": 0.8612,
+      "threshold": 0.85,
+      "confusion_matrix": [
+        [
+          17726,
+          225
+        ],
+        [
+          1124,
+          925
+        ]
+      ]
+    }
+  },
+  "best_hyperparameters": {
+    "n_estimators": 500,
+    "min_samples_split": 5,
+    "min_samples_leaf": 2,
+    "max_depth": null
+  }
+}
